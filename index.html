@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Percentage Calculator | Calculate Percentage Online</title>
+  <meta name="description" content="Free percentage calculator to calculate percentage values easily. Useful for students, exams, marks calculation, and basic finance.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <h1>Percentage Calculator</h1>
+
+  <p>
+    This percentage calculator helps you calculate percentage values quickly and easily.
+    It is useful for exam marks, discounts, finance calculations, and basic math problems.
+  </p>
+
+  <p>
+    Percentage means a value out of 100. It is commonly used in academics, business,
+    and everyday calculations.
+  </p>
+
+  <hr>
+
+  <!-- Calculator Section -->
+  <h2>Calculate Percentage</h2>
+
+  <label>Value</label><br>
+  <input type="number" id="value" placeholder="Enter value"><br><br>
+
+  <label>Percentage (%)</label><br>
+  <input type="number" id="percent" placeholder="Enter percentage"><br><br>
+
+  <button onclick="calcPercentage()">Calculate</button>
+
+  <p id="result"></p>
+
+  <hr>
+
+  <h2>How Percentage is Calculated</h2>
+
+  <p>
+    Percentage is calculated using the following formula:
+  </p>
+
+  <p>
+    <strong>
+      Percentage Value = (Value × Percentage) / 100
+    </strong>
+  </p>
+
+  <p>
+    This calculator applies the same formula to give accurate percentage results instantly.
+  </p>
+
+  <h2>Example of Percentage Calculation</h2>
+
+  <p>
+    If you want to calculate 20% of 500:
+  </p>
+
+  <p>
+    Percentage Value = (500 × 20) / 100 = 100
+  </p>
+
+  <h2>Who Should Use This Percentage Calculator</h2>
+
+  <ul>
+    <li>Students calculating exam scores</li>
+    <li>People calculating discounts</li>
+    <li>Anyone solving basic math problems</li>
+  </ul>
+
+  <!-- Calculator Logic -->
+  <script>
+    function calcPercentage() {
+      var value = document.getElementById("value").value;
+      var percent = document.getElementById("percent").value;
+
+      var result = (value * percent) / 100;
+
+      document.getElementById("result").innerHTML =
+        percent + "% of " + value + " = " + result;
+    }
+  </script>
+
+</body>
+</html>
